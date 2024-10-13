@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ota yhteyttä - Konstan Kuteet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .contact-info p {
+            font-size: 18px;
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+        .contact-info p span {
+            font-weight: bold;
+            display: block;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 12px 20px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #c0392b;
+        }
+        
+        @media (max-width: 414px) {
+            header {
+                padding: 15px 0;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            .container {
+                width: 90%;
+            }
+            .contact-info p {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+            .contact-info p span {
+                font-size: 14px;
+            }
+            button {
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <h1>Ota yhteyttä - Konstan Kuteet</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Koti</a></li>
+                <li><a href="tuotteet.html">Tuotteet</a></li>
+                <li><a href="meistä.html">Tietoa meistä</a></li>
+                <li><a href="yhteydenotto.html">Ota yhteyttä</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <h2>Yhteystiedot</h2>
+        <div class="contact-info">
+            <p><span>Sähköposti:</span> support@konstankuteet.com</p>
+            <p><span>Puhelinnumero:</span> +358 401234567</p>
+            <p><span>Osoite:</span> Ratapihantie 13, 00520 Helsinki</p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Lähetä viesti</h2>
+            <form action="submit_contact.php" method="POST">
+                <input type="text" name="name" placeholder="Nimi" required>
+                <input type="email" name="email" placeholder="Sähköposti" required>
+                <textarea name="message" rows="5" placeholder="Viesti" required></textarea>
+                <button type="submit">Lähetä viesti</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Konstan Kuteet. All Rights Reserved.</p>
+        <p>Seuraa meitä:
+            <a href="eioo">Instagram</a> |
+            <a href="eioo">Facebook</a> |
+            <a href="eioo">Twitter</a>
+        </p>
+    </footer>
+</body>
+</html>

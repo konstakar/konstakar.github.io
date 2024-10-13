@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuotteet - Konstan Kuteet</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        .products-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .product {
+            width: 30%;
+            margin-bottom: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            font-size: 22px;
+            margin: 10px 0;
+        }
+        .product p.price {
+            color: #e74c3c;
+            font-size: 18px;
+        }
+        button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #c0392b;
+        }
+    
+        @media (max-width: 414px) {
+            header {
+                padding: 15px 0;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            .container {
+                width: 90%;
+            }
+            .products-grid {
+                display: block;
+            }
+            .product {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tuotteet - Konstan Kuteet</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Koti</a></li>
+                <li><a href="tuotteet.html">Tuotteet</a></li>
+                <li><a href="meistä.html">Tietoa meistä</a></li>
+                <li><a href="yhteydenotto.html">Ota yhteyttä</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <h2>Tämän hetkinen valikoima</h2>
+        <div class="products-grid">
+            <div class="product">
+                <img src="Leijonat.jpg" alt="Sininen Leijonat-fanipaita">
+                <h3>Leijonat-fanipaita</h3>
+                <p class="price">29,99€</p>
+                <button>Lisää koriin</button>
+            </div>
+            <div class="product">
+                <img src="CalvinKlein.jpg" alt="Musta Calvin Klein Jeansin takki">
+                <h3>Calvin Klein Jeans-takki</h3>
+                <p class="price">89,99€</p>
+                <button>Lisää koriin</button>
+            </div>
+            <div class="product">
+                <img src="RickOwens.jpg" alt="Mustavalkoiset Rick Owens Ramones kengät">
+                <h3>Rick Owens Ramones</h3>
+                <p class="price">499,99€</p>
+                <button>Lisää koriin</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Konstan Kuteet. All Rights Reserved.</p>
+        <p>Seuraa meitä:
+            <a href="#">Instagram</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
+    
+</body>
+</html>
